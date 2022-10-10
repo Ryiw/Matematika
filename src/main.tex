@@ -12,10 +12,20 @@
 \usepackage{tikz}
 \usepackage{hyperref}
 \usepackage{parskip}
+\usepackage{titlesec}
+
+% Promjena izgleda poglavlja
+\titleformat{\chapter}[display]
+  {\bfseries\Large}
+  {\filright{\chaptertitlename} \Huge\thechapter}
+  {1ex}
+  {\titlerule\vspace{1ex}\filleft\MakeUppercase}
+  [\vspace{1ex}\titlerule]
 
 % Document
 \begin{document}
 
+% Naslovna strana
 \begin{titlepage}
 
 	\centering
@@ -44,7 +54,7 @@
 	%	Opis
 	%------------------------------------------------
 
-	Pripreme za dr\v zavnu maturu iz matematike
+	Pripreme za državnu maturu iz matematike
 
 	\vspace*{3\baselineskip}
 
@@ -66,15 +76,26 @@
 	%------------------------------------------------
 
 	\vspace{0.3\baselineskip}
-	2022.
+	Zagreb
 
-	{\large Zagreb}
+	2022.
 
 \end{titlepage}
 
-    Matematika
+% Sadržaj
+\clearpage
+\ifpdf
+	\phantomsection
+\fi
+\addcontentsline{toc}{chapter}{{\numberline{}\contentsname}}
+\tableofcontents
 
-    \bibliography{main}
-    \bibliographystyle{plain}
+% Poglavlja
+\clearpage
+\input 1-realni-brojevi.tex
+
+% Popis literature
+\bibliography{main}
+\bibliographystyle{plain}
 
 \end{document}
