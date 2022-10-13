@@ -13,13 +13,17 @@
 \usepackage{hyperref}
 \usepackage{parskip}
 \usepackage{titlesec}
+\usepackage{setspace}
+
+% Povećanje razmaka između redaka
+\onehalfspacing
 
 % Promjena izgleda poglavlja
 \titleformat{\chapter}[display]
-  {\bfseries\Large}
-  {\filright{\chaptertitlename} \Huge\thechapter}
+  {\scshape\Large}
+  {\normalfont\filright{\chaptertitlename} \Huge\thechapter}
   {1ex}
-  {\titlerule\vspace{1ex}\filright\MakeUppercase}
+  {\titlerule\vspace{1ex}\filright}
   [\vspace{1ex}\titlerule]
 
 % Document
@@ -66,8 +70,6 @@
 
 	\vspace{0.5\baselineskip}
 	{\scshape\Large Josip Zeba\\}
-	\vspace{0.5\baselineskip}
-	\textit{mag. ing. mech.}
 
 	\vfill
 
