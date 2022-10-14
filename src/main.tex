@@ -14,9 +14,19 @@
 \usepackage{parskip}
 \usepackage{titlesec}
 \usepackage{setspace}
+\usepackage{fancyhdr}
 
 % Povećanje razmaka između redaka
 \onehalfspacing
+
+% Promjena izgleda zaglavlja i podnožja
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\scshape{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\itshape{#1}}{}}
+\fancyhf{}
+\rhead{\rightmark}
+\lhead{\leftmark}
+\cfoot{\thepage}
 
 % Promjena izgleda poglavlja
 \titleformat{\chapter}[display]
