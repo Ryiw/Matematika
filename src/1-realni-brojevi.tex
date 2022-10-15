@@ -38,7 +38,10 @@ Unija skupova $A$ i $B$, označena sa $A \cup B$, je skup svih elemenata koji su
 Novi se skup također može konstruirati određivanjem \emph{zajedničkih} elemenata obaju skupova.
 To nazivamo presjek skupova.
 Presjek skupova $A$ i $B$, označen sa $A \cap B$, je skup svih elemenata koji su članovi i skupa $A$ i skupa $B$.
-Slika~\ref{fig:operacije-sa-skupovima} prikazuje uniju i presjek skupova pomoću Vennovih dijagrama.
+
+Jedna od operacija je i razlika skupova, odnosno \emph{oduzimanje} elemenata jednog skupa od drugoga.
+Razlika skupova $A$ i $B$, označen sa $A \backslash B$, je skup koji čine svi članovi skupa $A$ koji nisu i u skupu $B$.
+Slika~\ref{fig:operacije-sa-skupovima} prikazuje uniju, presjek i razliku skupova pomoću Vennovih dijagrama.
 
 \begin{figure}[h!]
 \begin{center}\vspace{0.25cm}
@@ -55,6 +58,14 @@ Slika~\ref{fig:operacije-sa-skupovima} prikazuje uniju i presjek skupova pomoću
 \node at (9.5,0) {$A$};
 \node at (12.5,0) {$B$};
 \node at (11,-2.25) {$A \cap B$};
+\begin{scope}
+  \clip (16,0) circle [radius=1.75];
+  \draw[fill=gray!20, even odd rule] (16,0) circle [radius=1.75] (18,0) circle [radius=1.75];
+\end{scope}
+\draw (16,0) circle [radius=1.75] (18,0) circle [radius=1.75];
+\node at (15.5,0) {$A$};
+\node at (18.5,0) {$B$};
+\node at (17,-2.25) {$A \backslash B$};
 \end{tikzpicture}
 \end{center}
 \caption{Operacije sa skupovima}\label{fig:operacije-sa-skupovima}
@@ -75,3 +86,16 @@ Najveći zajednički djelitelj prirodnih brojeva $a$, $b$ i $c$ je najveći broj
 Prirodan broj veći od 1 je prost broj ako je djeljiv samo s 1 i sa samim sobom.
 Broj je složen ako nije prost, s iznimkom broja 1 koji ne držimo ni prostim ni složenim.
 Svaki se prirodan broj može napisati u obliku umnoška prostih brojeva.
+
+Kriteriji djeljivosti prirodnih brojeva s brojevima od 0 do 10 su:
+\begin{itemize}
+  \item broj je djeljiv s 2 ako mu je zadnja znamenka 0, 2, 4, 6, 8, odnosno paran broj,
+  \item broj je djeljiv s 3 ako mu je zbroj znamenaka djeljiv s 3,
+  \item broj je djeljiv sa 4 ako mu je dvoznamenkasti završetak djeljiv s 4,
+  \item broj je djeljiv s 5 ako mu je zadnja znamenka 0 ili 5,
+  \item broj je djeljiv sa 6 ako je djeljiv i s 2 i s 3,
+  \item broj je djeljiv sa 7 ako je razlika između broja koji se dobije micanjem broja jedinice i dvostruke znamenke jedinica toga broja djeljiva sa 7,
+  \item broj je djeljiv s 8 ako mu je troznamenkasti završetak djeljiv s 8,
+  \item broj je djeljiv s 9 ako mu je zbroj znamenaka djeljiv s 9,
+  \item broj je djeljiv s 10 ako mu je zadnja znamenka 0.
+\end{itemize}

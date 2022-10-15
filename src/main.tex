@@ -15,9 +15,19 @@
 \usepackage{titlesec}
 \usepackage{setspace}
 \usepackage{fancyhdr}
+\usepackage{geometry}
 
 % Povećanje razmaka između redaka
 \onehalfspacing
+
+% Zadavanje veličine korisne stranice i korekcija headheight
+ \geometry{
+ a4paper,
+ total={150mm,227mm},
+ left=30mm,
+ top=40mm,
+ }
+\setlength{\headheight}{14.5pt}
 
 % Promjena izgleda zaglavlja i podnožja
 \pagestyle{fancy}
@@ -95,6 +105,7 @@
 \end{titlepage}
 
 % Sadržaj
+\setcounter{tocdepth}{1}
 \clearpage
 \ifpdf
 	\phantomsection
