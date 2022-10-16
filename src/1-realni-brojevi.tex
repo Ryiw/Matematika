@@ -99,3 +99,55 @@ Kriteriji djeljivosti prirodnih brojeva s brojevima od 0 do 10 su:
   \item broj je djeljiv s 9 ako mu je zbroj znamenaka djeljiv s 9,
   \item broj je djeljiv s 10 ako mu je zadnja znamenka 0.
 \end{itemize}
+
+\subsection{Skup cijelih brojeva}\label{subsec:skup-cijelih-brojeva}
+Skup cijelih brojeva označavamo s oznakom $\mathbb{Z}$.
+Potreba za ovim skupom dolazi iz razloga kako rezultat oduzimanja prirodnih brojeva nije uvijek prirodan broj, stoga se skup prirodnih brojeva proširuje s 0 i negativnim cijelim brojevima.
+Skup je zatvoren s obzirom na zbrajanje, oduzimanje i množenje.
+\[ \mathbb{Z}=\{\ldots,-3,-2,-1,0,1,2,3,\ldots\}. \]
+Za svaki cijeli broj $a \neq 0$ postoji cijeli broj $-a$ tako da vrijedi da je njihov zbroj jednak 0.
+Broj $-a$ je suprotni broj broja $a$.
+
+Dijeljenje s nulom nije definirano.
+
+\subsection{Skup racionalnih brojeva}\label{subsec:skup-racionalnih-brojeva}
+Skup racionalnih brojeva označavamo s oznakom $\mathbb{Q}$.
+Činjenica da količnik dvaju cijelih brojeva općenito nije cijeli broj nameće potrebu za proširenjem skupa cijelih brojeva.
+Skup racionalnih brojeva zatvoren je s obzirom na zbrajanje, oduzimanje, množenje i dijeljenje.
+\[ \mathbb{Q}=\left\{\frac{a}{b} : a,b \in \mathbb{Z}, b \neq 0 \right\}. \]
+Svaki je racionalni broj je moguće zapisati u obliku razlomka, gdje je broj $a$ brojnik, a broj $b$ nazivnik razlomka.
+Svaki racionalan broj ima konačan ili beskonačan periodičan decimalni prikaz.
+Provedemo li razlomkom zadano dijeljenje cijelih brojeva, dobit ćemo racionalan broj zapisan u decimalnom obliku.
+
+Za svaki racionalni broj $\displaystyle \frac{a}{b}$ i svaki broj $m$ različiti od nule vrijedi
+\[ \frac{a}{b} = \frac{a \cdot m}{b \cdot m}, \]
+pri čemu, ako jednakost čitamo s lijeva na desno, govorimo o proširivanju razlomka, a u suprotnom smjeru, govorimo o skraćivanju razlomka.
+
+Pravi razlomak je razlomak kojem je brojnik manji od nazivnika.
+Kada govorimo o zbroju prirodnog broja $n$ i razlomka, govorimo o mješovitom broju
+\[ n + \frac{a}{b} = n\frac{a}{b}, \]
+Zbrajanje i oduzimanje razlomaka provodi se na način da se razlomci svedu, odnosno prošire na zajednički nazivnik te se njihovi brojnici zbroje, odnosno oduzmu.
+
+Množenje dvaju razlomaka provodi se na način da se pomnože brojnik s brojnikom i nazivnik s nazivnikom te se dijeljenje razlomaka zamjenjuje s množenjem na način da djelitelja zapišemo u recipročnom obliku, odnosno zamijenimo mjesta brojniku i nazivniku te nakon toga provedemo množenje dvaju razlomaka.
+
+\subsection{Skup iracionalnih brojeva}\label{subsec:skup-iracionalnih-brojeva}
+Postoje brojevi koji nisu racionalni, koje nije moguće predočiti kao količnik dvaju cijelih brojeva, odnosno zapisati u obliku razlomka.
+Takvi se brojevi zovu iracionalni brojevi.
+Skup iracionalnih brojeva označavamo s oznakom $\mathbb{I}$.
+Brojevi $\sqrt{2}$, $\sqrt{3}$, $\pi$ i $e$  primjeri su nekih iracionalnih brojeva.
+
+\subsection{Skup realnih brojeva}\label{subsec:skup-realnih-brojeva}
+Skup realnih brojeva označavamo s oznakom $\mathbb{R}$ i sastoji se od skupa racionalnih i iracionalnih brojeva.
+Skup realnih brojeva zatvoren je s obzirom na zbrajanje, oduzimanje, množenje i dijeljenje.
+\[ \mathbb{R}=\mathbb{Q} \cup \mathbb{I}. \]
+Svaki realni broj $a$ možemo prikazati u konačnom ili beskonačnom decimalnom zapisu.
+Također možemo reći da vrijedi da je svaki prirodan broj ujedno i cijeli broj, a svaki cijeli ujedno i racionalni te svaki racionalni ujedno i realni broj pa vrijedi da je
+\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}. \]
+Aksiomi polja skupa realnih brojeva su:
+\begin{itemize}
+  \item komutativnost: $a+b=b+a, \quad a \cdot b = b \cdot a$,
+  \item asocijativnost: $(a+b)+c=a+(b+c), \quad (a \cdot b) \cdot c = a \cdot (b \cdot c)$,
+  \item distributivnost: $a \cdot (b + c) = a \cdot b + a \cdot c$,
+  \item neutralni elementi, 0 za zbrajanje i 1 za množenje: $a + 0 = a, \quad a \cdot 1 = a$
+  \item suprotni i inverzni broj: $\displaystyle a + (-a) = 0, \quad a \cdot \frac{1}{a} = 1 \quad a \neq 0.$
+\end{itemize}
