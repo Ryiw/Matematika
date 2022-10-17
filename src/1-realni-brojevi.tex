@@ -151,3 +151,100 @@ Aksiomi polja skupa realnih brojeva su:
   \item neutralni elementi, 0 za zbrajanje i 1 za množenje: $a + 0 = a, \quad a \cdot 1 = a$
   \item suprotni i inverzni broj: $\displaystyle a + (-a) = 0, \quad a \cdot \frac{1}{a} = 1 \quad a \neq 0.$
 \end{itemize}
+
+\section{Brojevni pravac i intervali}\label{sec:brojevni-pravac-i-intervali}
+Brojevni pravac je pravac na kojem je svakomu realnom broju pridružena jedna jedina točka.
+Brojevni pravac služi za predočavanje brojeva i grafičko računanje njima.
+Slika~\ref{fig:brojevni-pravac} prikazuje brojevni pravac.
+
+\begin{figure}[h!]
+\begin{center}\vspace{0.25cm}
+\begin{tikzpicture}
+\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,-3pt) node[below] {$\x$};
+\draw (0cm,3pt) node[above] {$O$};
+\draw (1cm,3pt) node[above] {$E$};
+\end{tikzpicture}
+\end{center}
+\caption{Brojevni pravac}\label{fig:brojevni-pravac}
+\end{figure}
+
+Na pravcu se najprije odabere točka $O$ odnosno ishodište, koja predstavlja 0, a zatim jedinična točka 1 s oznakom $E$.
+Dužina $\overline{OE}$ predstavlja jediničnu duljinu.
+Točkama na desnoj strani od $O$ odgovaraju pozitivni realni brojevi, odnosno veći brojevi, a na lijevoj strani negativni, odnosno manji brojevi od promatranoga.
+Bilo kojem realnom broju $a$ odgovara točka $A$, tako da je dužina $\overline{OA}$ (mjerena jediničnom duljinom) jednaka $a$ jediničnih duljina.
+Između bilo koja dva realna broja postoji beskonačno mnogo racionalnih i iracionalnih brojeva.
+
+Skup svih realnih brojeva $x$ za koje vrijedi $a<x<b$ gdje su $a$ i $b$ također realni brojevi, zovemo intervalom i zapisujemo $\langle a,b \rangle$.
+Intervali mogu biti poluzatvoreni $[a,b \rangle$, ako je $a \leq x<b$, poluotvoreni $\langle a,b]$, ako je $a<x \leq b$ ili zatvoreni $[a,b]$, ako je $a \leq x \leq b$, kako je prikazano na slici~\ref{fig:intervali}
+
+\begin{figure}[h!]
+\begin{center}\vspace{0.5cm}
+\begin{tikzpicture}
+\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+\foreach \x in  {-3,3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\draw (-3cm,-3pt) node[below] {$a$};
+\draw (3cm,-3pt) node[below] {$b$};
+\draw[thick] (-2.9,4pt) -- (-3,4pt) -- (-3,-4pt) -- (-2.9,-4pt);
+\draw[thick] (2.8,-4pt) -- (3,0) -- (2.8,4pt);
+\fill[opacity = 0.2, gray] (-3,-4pt) -- (2.8, -4pt) -- (3, 0) -- (2.8, 4pt) -- (-3,4pt);
+\end{tikzpicture}
+
+\vspace{0.5cm}
+\begin{tikzpicture}
+\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+\foreach \x in  {-3,3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\draw (-3cm,-3pt) node[below] {$a$};
+\draw (3cm,-3pt) node[below] {$b$};
+\draw[thick] (2.9,4pt) -- (3,4pt) -- (3,-4pt) -- (2.9,-4pt);
+\draw[thick] (-2.8,-4pt) -- (-3,0) -- (-2.8,4pt);
+\fill[opacity = 0.2, gray] (3,-4pt) -- (-2.8, -4pt) -- (-3, 0) -- (-2.8, 4pt) -- (3,4pt);
+\end{tikzpicture}
+
+\vspace{0.5cm}
+\begin{tikzpicture}
+\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+\foreach \x in  {-3,3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\draw (-3cm,-3pt) node[below] {$a$};
+\draw (3cm,-3pt) node[below] {$b$};
+\draw[thick] (2.9,4pt) -- (3,4pt) -- (3,-4pt) -- (2.9,-4pt);
+\draw[thick] (-2.9,4pt) -- (-3,4pt) -- (-3,-4pt) -- (-2.9,-4pt);
+\fill[opacity = 0.2, gray] (3,-4pt) -- (-3, -4pt) -- (-3, 4pt) -- (3,4pt);
+\end{tikzpicture}
+\end{center}
+\caption{Intervali}\label{fig:intervali}
+\end{figure}
+
+Neke granice intervala mogu biti i beskonačne pa tako skup svih realnih brojeva za koje vrijedi $x>a$ možemo zapisati u obliku intervala $\langle a,+\infty \rangle$, a skup svih realnih brojeva za koje vrijedi $x<a$ možemo zapisati u obliku intervala $\langle -\infty , a \rangle$, kako je prikazano na slici~\ref{fig:beskonačni-intervali}.
+
+\begin{figure}[h!]
+\begin{center}\vspace{0.5cm}
+\begin{tikzpicture}
+\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+\foreach \x in  {-3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\draw (-3cm,-3pt) node[below] {$a$};
+\draw (5.25,-3pt) node[below] {$+\infty$};
+\draw[thick] (-2.8,4pt) -- (-3,0pt) -- (-2.8,-4pt);
+\fill[opacity = 0.2, gray] (-2.8,-4pt) -- (5.7, -4pt) -- (5.7, 4pt) -- (-2.8, 4pt) -- (-3,0pt);
+\end{tikzpicture}
+
+\vspace{0.5cm}
+\begin{tikzpicture}
+\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+\foreach \x in  {3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\draw (3cm,-3pt) node[below] {$a$};
+\draw (-5.25,-3pt) node[below] {$-\infty$};
+\draw[thick] (2.8,4pt) -- (3,0pt) -- (2.8,-4pt);
+\fill[opacity = 0.2, gray] (2.8,-4pt) -- (-5.7, -4pt) -- (-5.7, 4pt) -- (2.8, 4pt) -- (3,0pt);
+\end{tikzpicture}
+\end{center}
+\caption{Beskonačni intervali}\label{fig:beskonačni-intervali}
+\end{figure}
