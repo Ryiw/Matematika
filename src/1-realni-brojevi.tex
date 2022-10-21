@@ -18,7 +18,7 @@ Ako je svaki član skupa $A$ također član skupa $B$, tada se za skup $A$ kaže
 Može se, također, zapisati $B \supseteq A$ odnosno skup $B$ je nadskup skupa $A$.
 Ako je skup $A$ podskup i nije jednak skupu $B$, tada se za skup $A$ kaže da je pravi podskup skupa $B$, a zapisuje se $A \subset B$ ili možemo reći da je skup $B$ pravi nadskup skupa $A$ i zapisati $B \supset A$ kako prikazuje slika~\ref{fig:podskup}.
 
-\begin{figure}
+\begin{figure}[ht]
 \begin{center}\vspace{0.25cm}
 \begin{tikzpicture}[scale=0.8, every node/.style={scale=1}]
 \filldraw[fill=gray!20,draw=black] (0,0) circle [radius=1.75];
@@ -43,7 +43,7 @@ Jedna od operacija je i razlika skupova, odnosno \emph{oduzimanje} elemenata jed
 Razlika skupova $A$ i $B$, označen sa $A \backslash B$, je skup koji čine svi članovi skupa $A$ koji nisu i u skupu $B$.
 Slika~\ref{fig:operacije-sa-skupovima} prikazuje uniju, presjek i razliku skupova pomoću Vennovih dijagrama.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 \begin{center}\vspace{0.25cm}
 \begin{tikzpicture}[scale=0.8, every node/.style={scale=1}]
 \filldraw[fill=gray!20,draw=black] (4,0) circle [radius=1.75] (6,0) circle [radius=1.75];
@@ -125,7 +125,7 @@ pri čemu, ako jednakost čitamo s lijeva na desno, govorimo o proširivanju raz
 
 Pravi razlomak je razlomak kojem je brojnik manji od nazivnika.
 Kada govorimo o zbroju prirodnog broja $n$ i razlomka, govorimo o mješovitom broju
-\[ n + \frac{a}{b} = n\frac{a}{b}, \]
+\[ n + \frac{a}{b} = n\frac{a}{b}. \]
 Zbrajanje i oduzimanje razlomaka provodi se na način da se razlomci svedu, odnosno prošire na zajednički nazivnik te se njihovi brojnici zbroje, odnosno oduzmu.
 
 Množenje dvaju razlomaka provodi se na način da se pomnože brojnik s brojnikom i nazivnik s nazivnikom te se dijeljenje razlomaka zamjenjuje s množenjem na način da djelitelja zapišemo u recipročnom obliku, odnosno zamijenimo mjesta brojniku i nazivniku te nakon toga provedemo množenje dvaju razlomaka.
@@ -148,16 +148,18 @@ Aksiomi polja skupa realnih brojeva su:
   \item komutativnost: $a+b=b+a, \quad a \cdot b = b \cdot a$,
   \item asocijativnost: $(a+b)+c=a+(b+c), \quad (a \cdot b) \cdot c = a \cdot (b \cdot c)$,
   \item distributivnost: $a \cdot (b + c) = a \cdot b + a \cdot c$,
-  \item neutralni elementi, 0 za zbrajanje i 1 za množenje: $a + 0 = a, \quad a \cdot 1 = a$
+  \item neutralni elementi, 0 za zbrajanje i 1 za množenje: $a + 0 = a, \quad a \cdot 1 = a,$
   \item suprotni i inverzni broj: $\displaystyle a + (-a) = 0, \quad a \cdot \frac{1}{a} = 1 \quad a \neq 0.$
 \end{itemize}
+
+\input{zadaci/1-racunanje-s-realnim-brojevima}
 
 \section{Brojevni pravac i intervali}\label{sec:brojevni-pravac-i-intervali}
 Brojevni pravac je pravac na kojem je svakomu realnom broju pridružena jedna jedina točka.
 Brojevni pravac služi za predočavanje brojeva i grafičko računanje njima.
 Slika~\ref{fig:brojevni-pravac} prikazuje brojevni pravac.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 \begin{center}\vspace{0.25cm}
 \begin{tikzpicture}
 \draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
@@ -179,9 +181,9 @@ Bilo kojem realnom broju $a$ odgovara točka $A$, tako da je dužina $\overline{
 Između bilo koja dva realna broja postoji beskonačno mnogo racionalnih i iracionalnih brojeva.
 
 Skup svih realnih brojeva $x$ za koje vrijedi $a<x<b$ gdje su $a$ i $b$ također realni brojevi, zovemo intervalom i zapisujemo $\langle a,b \rangle$.
-Intervali mogu biti poluzatvoreni $[a,b \rangle$, ako je $a \leq x<b$, poluotvoreni $\langle a,b]$, ako je $a<x \leq b$ ili zatvoreni $[a,b]$, ako je $a \leq x \leq b$, kako je prikazano na slici~\ref{fig:intervali}
+Intervali mogu biti poluzatvoreni $[a,b \rangle$, ako je $a \leq x<b$, poluotvoreni $\langle a,b]$, ako je $a<x \leq b$ ili zatvoreni $[a,b]$, ako je $a \leq x \leq b$, kako je prikazano na slici~\ref{fig:otvoreni_i_zatvoreni_interval}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 \begin{center}\vspace{0.5cm}
 \begin{tikzpicture}
 \draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
@@ -189,21 +191,9 @@ Intervali mogu biti poluzatvoreni $[a,b \rangle$, ako je $a \leq x<b$, poluotvor
 \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
 \draw (-3cm,-3pt) node[below] {$a$};
 \draw (3cm,-3pt) node[below] {$b$};
-\draw[thick] (-2.9,4pt) -- (-3,4pt) -- (-3,-4pt) -- (-2.9,-4pt);
-\draw[thick] (2.8,-4pt) -- (3,0) -- (2.8,4pt);
-\fill[opacity = 0.2, gray] (-3,-4pt) -- (2.8, -4pt) -- (3, 0) -- (2.8, 4pt) -- (-3,4pt);
-\end{tikzpicture}
-
-\vspace{0.5cm}
-\begin{tikzpicture}
-\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
-\foreach \x in  {-3,3}
-\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
-\draw (-3cm,-3pt) node[below] {$a$};
-\draw (3cm,-3pt) node[below] {$b$};
-\draw[thick] (2.9,4pt) -- (3,4pt) -- (3,-4pt) -- (2.9,-4pt);
+\draw[thick] (2.8,4pt) -- (3,0) --  (2.8,-4pt);
 \draw[thick] (-2.8,-4pt) -- (-3,0) -- (-2.8,4pt);
-\fill[opacity = 0.2, gray] (3,-4pt) -- (-2.8, -4pt) -- (-3, 0) -- (-2.8, 4pt) -- (3,4pt);
+\fill[opacity = 0.2, gray] (2.8,-4pt) -- (-2.8, -4pt) -- (-3, 0) -- (-2.8, 4pt) -- (2.8,4pt) -- (3,0);
 \end{tikzpicture}
 
 \vspace{0.5cm}
@@ -218,12 +208,20 @@ Intervali mogu biti poluzatvoreni $[a,b \rangle$, ako je $a \leq x<b$, poluotvor
 \fill[opacity = 0.2, gray] (3,-4pt) -- (-3, -4pt) -- (-3, 4pt) -- (3,4pt);
 \end{tikzpicture}
 \end{center}
-\caption{Intervali}\label{fig:intervali}
+\caption{Otvoreni i zatvoreni interval}\label{fig:otvoreni_i_zatvoreni_interval}
 \end{figure}
+
+Navedeno je također moguće zapisati u obliku skupa brojeva
+\begin{gather*}
+    \langle a,b \rangle = \{ x \in \mathbb{R} \ | \ a < x < b \},\\
+    [ a,b ] = \{ x \in \mathbb{R} \ | \ a \leq x \leq b \},\\
+    [ a,b \rangle = \{ x \in \mathbb{R} \ | \ a \leq x < b \},\\
+    \langle a,b ] = \{ x \in \mathbb{R} \ | \ a < x \leq b \}.
+\end{gather*}
 
 Neke granice intervala mogu biti i beskonačne pa tako skup svih realnih brojeva za koje vrijedi $x>a$ možemo zapisati u obliku intervala $\langle a,+\infty \rangle$, a skup svih realnih brojeva za koje vrijedi $x<a$ možemo zapisati u obliku intervala $\langle -\infty , a \rangle$, kako je prikazano na slici~\ref{fig:beskonačni-intervali}.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 \begin{center}\vspace{0.5cm}
 \begin{tikzpicture}
 \draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
@@ -248,3 +246,9 @@ Neke granice intervala mogu biti i beskonačne pa tako skup svih realnih brojeva
 \end{center}
 \caption{Beskonačni intervali}\label{fig:beskonačni-intervali}
 \end{figure}
+
+Beskonačni intervali zapisani u obliku skupa brojeva jednaki su
+\begin{gather*}
+    \langle a, +\infty \rangle = \{ x \in \mathbb{R} \ | \ x > a \},\\
+    \langle -\infty , a \rangle = \{ x \in \mathbb{R} \ | \ x < a \}.
+\end{gather*}

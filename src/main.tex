@@ -16,6 +16,15 @@
 \usepackage{setspace}
 \usepackage{fancyhdr}
 \usepackage{geometry}
+\usepackage{tasks}
+
+% Izrada zadatka
+\theoremstyle{definition}
+\newtheorem{zadatak}{Zadatak}
+
+% Povećanje task širine i postavljanje numeriranja velikim slovima
+\settasks{label-width = 14.5pt}
+\settasks{label = \Alph*.}
 
 % Povećanje razmaka između redaka
 \onehalfspacing
@@ -40,11 +49,14 @@
 
 % Promjena izgleda poglavlja
 \titleformat{\chapter}[display]
-  {\scshape\Large}
-  {\normalfont\filright{\chaptertitlename} \Huge\thechapter}
-  {1ex}
-  {\titlerule\vspace{1ex}\filright}
-  [\vspace{1ex}\titlerule]
+	{\scshape\Large}
+	{\normalfont\filright{\chaptertitlename} \Huge\thechapter}
+	{1ex}
+	{\titlerule\vspace{1ex}\filright}
+	[\vspace{1ex}\titlerule]
+
+\titleformat*{\subsubsection}
+	{\scshape\Large}
 
 % Document
 \begin{document}
