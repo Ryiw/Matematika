@@ -1,0 +1,94 @@
+\newpage
+
+\subsubsection{Zadaci}
+
+\setcounter{zadatak}{0}
+
+\begin{zadatak}
+    Na brojevnom pravcu uctraj slijedeće točke: $A\displaystyle \left(-\frac{3}{2}\right)$, $B(-2.75)$, $C\left(\sqrt{20}\right)$ i $D\left(\displaystyle-\frac{3\pi}{2}\right)$.
+
+	\begin{center}\vspace{0.25cm}
+	\begin{tikzpicture}
+	\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+	\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+	\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+	\foreach \x in {0,1}
+	\draw[shift={(\x,0)},color=black] (0pt,-3pt) node[below] {$\x$};
+	\end{tikzpicture}
+	\end{center}
+\end{zadatak}
+
+\begin{zadatak}
+    Koliko ima prirodnih brojeva $n$ koji pripadaju skupu $[ -8, 4 \rangle \cap [-2, 10]$?
+    \begin{tasks}(4)
+		\task $1$
+		\task $2$
+		\task $3$
+		\task $4$
+	\end{tasks}
+\end{zadatak}
+
+\begin{zadatak}
+    Koliko ima cijelih brojeva $z$ koji pripadaju skupu $\langle -8, -2 \rangle \cup [-3, 0 \rangle$?
+    \begin{tasks}(4)
+		\task $1$
+		\task $3$
+		\task $5$
+		\task $7$
+	\end{tasks}
+\end{zadatak}
+
+\begin{zadatak}
+    Odredite skup $A \backslash B$, ako je skup $A = \{ x \in \mathbb{Z} \ | -5 \leq x \leq 8 \}$ i skup $B = \{ x \in \mathbb{N} \ | -3 \leq x \leq 4 \}$.
+\end{zadatak}
+
+\begin{zadatak}
+    Na brojevnom pravcu zadane su točke $A(-3.25)$ i $B(2.4)$.
+	Kolika je udaljenost između točaka $A$ i $B$?
+    \begin{tasks}(4)
+		\task $0.85$
+		\task $5.65$
+		\task $3.25$
+		\task $2.4$
+	\end{tasks}
+\end{zadatak}
+
+\begin{zadatak}
+    Na brojevnome pravcu zadane su točke $A\displaystyle \left(-\frac{3}{2}\right)$ i $B \displaystyle \left(\frac{7}{4}\right)$.
+	Točka $C$ je za 4 veća od točke $A$, a točka $D$ nalazi se na polovini udaljenosti između točaka $A$ i $B$.
+	Kolika je udaljenost između točaka $C$ i $D$?
+    \begin{tasks}(4)
+		\task $\displaystyle \frac{3}{2}$
+		\task $\displaystyle \frac{5}{3}$
+		\task $\displaystyle \frac{7}{8}$
+		\task $\displaystyle \frac{15}{3}$
+	\end{tasks}
+\end{zadatak}
+
+\begin{zadatak}
+    Na brojevnome pravcu zadana sa dva skupa $A$ i $B$.
+	Odredite $A \backslash B$.
+
+	\begin{center}\vspace{0.25cm}
+	\begin{tikzpicture}
+	\draw[-latex] (-6,0) -- (6,0) coordinate[label=below: $x$] (x);
+	\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+	\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+	\foreach \x in {-4,-2,3,5}
+	\draw[shift={(\x,0)},color=black] (0pt,-3pt) node[below] {$\x$};
+	\draw[thick] (-3.8,4pt) -- (-4,0pt) -- (-3.8,-4pt);
+	\draw[thick] (-1.9,4pt) -- (-2,4pt) -- (-2,-4pt) -- (-1.9,-4pt);
+	\draw[thick] (2.9,4pt) -- (3,4pt) -- (3,-4pt) -- (2.9,-4pt);
+	\draw[thick] (4.9,4pt) -- (5,4pt) -- (5,-4pt) -- (4.9,-4pt);
+	\draw (-4,0.2) -- (-4,0.8) -- (3,0.8) -- (3,0.2);
+	\draw (-2,0.2) -- (-2,1.6) -- (5,1.6) -- (5,0.2);
+	\coordinate[label=above:{$A$}] (A) at (-0.5,0.8);
+	\coordinate[label=above:{$B$}] (B) at (1.5,1.6);
+	\end{tikzpicture}
+	\end{center}
+\end{zadatak}
+
+\begin{zadatak}
+    Skup $A$ čine svi realni brojevi manji od $-3$ i veći i jednaki 15, a skup $B$ brojevi veći od $-4$.
+	Odredite $A \cap B$.
+\end{zadatak}
