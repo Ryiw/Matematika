@@ -1,0 +1,52 @@
+\chapter{Potencije}\label{ch:potencije}
+
+\section{Računske operacije s potencijama}\label{sec:računske-operacije-s-potencijama}
+
+Potenciranje je matematička operacija koja se svodi na množenje realnog broja sa samim sobom određeni broj puta.
+Upravo eksponent potencije određuje koliko puta je potrebno pomnožiti zadani broj sam sa sobom.
+Navedenu operaciju možemo zapisati
+\[ a^n = \underbrace{a \cdot a \cdot a \cdot \ldots \cdot a \cdot a \cdot a}_{n \ \text{istih faktora}} \qquad n \in \mathbb{N}. \]
+Realni broj $a$ koji se množi sam sa sobom zovemo baza potencija, a prirodan broj $n$ koji određuje koliko se puta broj množi sam sa sobom zovemo eksponent potencije.
+
+Ukoliko su eksponenti potencija cijeli broj 0 ili broj 1 vrijede tvrdnje da je
+\begin{gather*}
+    a^0 = 1,\\
+    a^1 = a.
+\end{gather*}
+Za računanje s potencijama postoje niz pravila.
+Zbrajati i oduzimati potencije moguće je samo ukoliko su baza i eksponent potencije jednaki.
+Tada zapravo \emph{izlučujemo} potenciju, a brojeve koji se nalaze uz potenciju zbrajamo ili oduzimamo na sljedeći način
+\[ x \cdot a^n \pm y \cdot a^n = (x \pm y) \cdot a^n. \]
+Množenje potencija istih baza provodi se na način da se eksponenati istih baza zapravo zbroje
+\[ a^m \cdot a^n = a^{m+n}, \]
+a dijeljenje potencija istih baza provodi se na način da se eksponenati istih baza zapravo oduzmu
+\[ \frac{a^m}{a^n} = a^m : a^n = a^{m-n} \qquad a^n \neq 0. \]
+Ukoliko se množe ili dijele potencije s istim eksponentima, a različitim bazama, onda je moguće prvo provesti operaciju množenja ili dijeljenja, a tek zatim opereciju potenciranja
+\begin{gather*}
+    a^n \cdot b^n = (a \cdot b)^n,\\
+    \frac{a^n}{b^n} = a^n : b^n = \left( \frac{a}{b} \right)^n \qquad b^n \neq 0.
+\end{gather*}
+Potenciranje potencija provodi se na način da se eksponenti pomnože
+\[ (a^m)^n = a^{m \cdot n}. \]
+Moguće je da eksponenti potencija budu i negativni brojevi.
+Tada $-$ u eksponentu predstavlja recipročnu vrijednost broja, odnosno
+\[ a^{-n} = \frac{1}{a^n} \qquad a^n \neq 0. \]
+
+\input{zadaci/3-racunske-operacije-s-potencijama}
+
+\section{Znanstveni zapis realnog broja}\label{sec:znanstveni-zapis-realnog-broja}
+U svakodnevnoj primjeni brojevi mogu biti izrazito veliki ili mali pa postaju nepraktični i za čitanje i za pisanje.
+Upravo zbog toga znanstvenici su odredili kraću metodu zapisivanja takvih brojeva te je nazvali znanstvenim zapisom realnog broja.
+Svaki racionalni broj moguće je prikazati u obliku umnožka decimalnog broja i potencije s bazom 10.
+Kako se eksponent nad bazom 10 može mijenjati, a time i svaki broj drukčije zapisati, određeno je da realni broj $a$ poprima točno određene vrijednosti.
+
+Znanstveni zapis realnog broja je zapis oblika
+\[ a \cdot 10^n \qquad a \in \mathbb{R}, \ 1 \leq |a| < 10, \ n \in \mathbb{Z}, \]
+tj.\ zapis u obliku umnoška realnog broja $a$ i potencije s bazom 10, uz uvjet da je apsolutna vrijednost realnog broja $a$ veća ili jednaka 1 te manja od 10.
+
+Za cijelobrojne potencije broja 10, odnosno za množenje broja 10 sa samim sobom vrijedi da pozitivan cijelobrojni eksponent odgovara broju nula nakon znamenke 1, dok kod negativnih cijelobrojnih eksponenata baze 10 vrijedi da eksponent predstavlja broj decimalnih mjesta u tome broju.
+\begin{gather*}
+    10^n = 1\underbrace{00 \ldots 00}_{\mathclap{n \ \text{nula}}},\\
+    10^{-n} = 0.\underbrace{00 \ldots 01}_{\mathclap{n \ \text{decimalnih mjesta}}}.
+\end{gather*}
+Množenje realnog broja s potencijom baze 10 koja ima pozitivan cijelobrojni eksponent je zapravo pomicanje decimalne točke u \emph{desno}, dok je množenje realnog broja s potencijom baze 10 koja ima negativan cijelobrojni eksponent zapravo pomicanje decimalne točke u \emph{lijevo}.
